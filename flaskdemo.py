@@ -13,7 +13,7 @@ def home():
 
 @app.route('/about')
 def about():
-    return "This is a testing site for Flask changes"
+    return render_template("about.html")
 
 
 @app.route('/search', methods=['POST', 'GET'])
